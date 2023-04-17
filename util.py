@@ -9,11 +9,11 @@ OPENAI_API_MODEL = ""
 def common(config):
     # Set up API keys and models from the configuration
     OPENAI_API_KEY = config['common']['openai_api_key']
-    assert OPENAI_API_KEY, "OPENAI_API_KEY environment variable is missing from .env"
+    assert OPENAI_API_KEY, "OPENAI_API_KEY environment variable is missing from config yaml"
 
     global OPENAI_API_MODEL
     OPENAI_API_MODEL = config['common']['openai_model']
-    assert OPENAI_API_MODEL, "OPENAI_API_MODEL environment variable is missing from .env"
+    assert OPENAI_API_MODEL, "OPENAI_API_MODEL environment variable is missing from config yaml"
 
     # Print a message if using GPT-4
     if "gpt-4" in OPENAI_API_MODEL.lower():
@@ -23,23 +23,18 @@ def common(config):
     OBJECTIVE = config['agent']['goal']
     INITIAL_TASK = config['agent']['init_task']
 
-    assert OBJECTIVE, "OBJECTIVE environment variable is missing from .env"
-    assert INITIAL_TASK, "INITIAL_TASK environment variable is missing from .env"
-
-    # Print the agent's goal and initial task
-    print("\033[92m\033[1m\n>>Agent's Goal\n\033[0m\033[0m")
-    print(f"{OBJECTIVE}")
-    print("\033[92m\033[1m\nInitial task:\033[0m\033[0m {INITIAL_TASK}")
+    assert OBJECTIVE, "OBJECTIVE environment variable is missing from config yaml"
+    assert INITIAL_TASK, "INITIAL_TASK environment variable is missing from config yaml"
 
     # Configure OpenAI and Pinecone
     openai.api_key = OPENAI_API_KEY
 
     if config["agent"]["agent_type"] == "agent_pineconemem":
         PINECONE_API_KEY = config['agent']['agent_pinecone_api_key'][0]
-        assert PINECONE_API_KEY, "PINECONE_API_KEY environment variable is missing from .env"
+        assert PINECONE_API_KEY, "PINECONE_API_KEY environment variable is missing from config yaml"
 
         PINECONE_ENVIRONMENT = config['agent']['agent_pinecone_api_key'][1]
-        assert PINECONE_ENVIRONMENT, "PINECONE_ENVIRONMENT environment variable is missing from .env"
+        assert PINECONE_ENVIRONMENT, "PINECONE_ENVIRONMENT environment variable is missing from config yaml"
 
         pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
   

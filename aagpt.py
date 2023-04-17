@@ -3,7 +3,7 @@ import time
 import os
 import yaml
 
-from aagpt import AgentGPTMEM, AgentPCMEM
+from agent import AgentGPTMEM, AgentPCMEM
 from env import Env
 import util
 
