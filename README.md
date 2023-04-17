@@ -26,6 +26,16 @@ To install AAGPT, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
+## Quickplay
+Just two steps, you can start using AAGPT's natural language processing abilities with your OpenAI API key.
+
+1. Open the `setup/game.yaml` file and enter your OpenAI API key in the `openai_api_key` field.
+
+2. Navigate to the AAGPT folder and run the following command:
+
+    ```bash
+      python aagpt.py 
+    ```
 ## Setup
 After installing AAGPT, you will need to set up related APIs to use the application. You can do this by following these steps:
 1. Navigate to the setup folder in the AAGPT directory:
