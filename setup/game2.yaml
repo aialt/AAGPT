@@ -1,0 +1,19 @@
+common:
+  openai_api_key: Your OpenAI API Key
+  openai_model: gpt-3.5-turbo # gpt-3.5-turbo, gpt4, text-davinci-003
+env:
+  env_name: dev
+  # currently env_openai_api_key uses the same oepnai api key
+  env_openai_api_key: =same_to_common
+agent:
+  agent_id: 1
+  agent_type: "agent_pineconemem"
+  # agent_openai_api_key uses the same oepnai api key
+  agent_openai_api_key: =same_to_common
+  goal: How to play pro in dota2
+  init_task: Develop a task list
+  agent_use_pinecone: true
+  # [your api key, your pinecone region]
+  agent_pinecone_api_key: [Your Pinecone API , Your Pinecone Region]
+  agent_pinecone_index: auto-agent-gpt-index
+  agent_life: 256
