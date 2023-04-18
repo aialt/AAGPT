@@ -2,6 +2,8 @@
 
 Auto-Agent-GPT (a.k.a AAGPT) is another experimental open-source application showcasing the capabilities of large language models.
 
+Language: [[English]](README.md) [[中文]](docs/README-cn.md)
+
 <div align="center">
   <img src="assets/demo.png" width="500" height="370">
 </div>
