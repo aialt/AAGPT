@@ -3,7 +3,7 @@
 Auto-Agent-GPT（AAGPT）是一个实验性的开源应用程序，目的是展示大型语言模型的能力。
 
 <div align="center">
-  <img src="../assets/demo-cn.png" width="800" height="320">
+  <img src="../assets/demo.png" width="800" height="320">
 </div>
 
 ## 特性
