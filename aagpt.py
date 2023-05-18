@@ -5,7 +5,7 @@ import yaml
 
 from agent import AgentGPTMEM, AgentPCMEM
 from env import Env
-import util
+import utils
 
 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -21,7 +21,7 @@ def setup_world():
         ws = yaml.load(f, Loader=yaml.FullLoader)
     
     # Perform common setup operations
-    util.common(ws)
+    utils.common(ws)
     
     return ws
 
