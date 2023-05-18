@@ -1,6 +1,6 @@
 from collections import deque
 from typing import Dict, List
-from util import memory_as_pinecone, get_ada_embedding, openai_call
+from utils import memory_as_pinecone, get_ada_embedding, openai_call
 
 
 class AgentGPTMEM:
