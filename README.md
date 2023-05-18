@@ -13,6 +13,7 @@ Language: [[English]](README.md) [[中文]](docs/README-cn.md)
   - GPT as memory
   - Vector database as memory (requires a PINECONE API key)
 - Lifespan limit for an agent (may save money)
+- Support for playing the overcooked game
 
 ## Installation 
 To install AAGPT, follow these steps:
@@ -58,6 +59,18 @@ Note: Optionally, you can use `game2.yaml` which using Pinecone as memory store.
 * `agent_pinecone_api_key`: The form will be a list `[Your Pinecone API , Your Pinecone Region]`, the first is pinecone API, and second will be the region of your index, you can get it from the Pinecone website.
 * `agent_pinecone_index`: The index name of the Pinecone index to use. In default, we use `aagpt_agent_index`.
 
+## Playing Overcooked
+<div align="center">
+  <img src="assets/demo-overcooked000.png" width="200" height="200">
+</div>
+
+1. Install [opencooking](https://github.com/hyintell/opencooking) envs.
+
+2. Let's play
+
+    ```bash
+      python aagpt-overcooked.py --render
+    ```
 
 ## Usage
 After setting the correct APIs, you can test AAGPT by executing the `aagpt.py` file in your terminal:
@@ -83,3 +96,11 @@ python aagpt.py --world_root setup/game2.yaml
 ## Acknowledgement  
   
 We are deeply grateful for the contributions made by open-source projects: [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) and [BabyAGI](https://github.com/yoheinakajima/babyagi).
+
+
+## REFERENCES
+- Auto-GPT
+- BabyAGI
+- gym-cooking
+- OvercookedGPT
+- overcooked_ai

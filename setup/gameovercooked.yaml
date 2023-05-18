@@ -1,0 +1,16 @@
+common:
+  openai_api_key: Your OpenAI API Key
+  openai_model: gpt-3.5-turbo  # gpt-3.5-turbo, gpt4, text-davinci-003
+  level: partial-divider_salad
+  task: make a tomato salad and deliver it # or change others: make a tomato and lettuce salad and deliver it
+  agents:
+    n: 2
+    names: [agent1, agent2]
+env:
+  env_name: opencooking:overcookedEnv-v0
+  # currently env_openai_api_key uses the same oepnai api key
+  env_openai_api_key: =same_to_common
+agent1:
+  agent_id: 1
+agent2:
+  agent_id: 2
