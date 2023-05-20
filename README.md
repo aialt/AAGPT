@@ -2,10 +2,12 @@
 
 Auto-Agent-GPT (a.k.a AAGPT) is another experimental open-source application showcasing the capabilities of large language models.
 
+<strong>Support: general tasks, overcooked game</strong>
+
 Language: [[English]](README.md) [[中文]](docs/README-cn.md)
 
 <div align="center">
-  <img src="assets/demo.png" width="500" height="370">
+  <img src="assets/demo.png" width="200" height="200"><img src="assets/demo-overcooked000.png" width="200" height="200">
 </div>
 
 ## Features
